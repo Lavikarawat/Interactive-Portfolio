@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <style>
+
+        /* contact section */
+        .contact-page {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #388e3c;
+        }
+
+        .contact-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 1.1rem;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-links a:hover {
+            color: #4CAF50;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .back-link a {
+                font-size: 1rem;
+                padding: 10px 15px;
+                display: inline-block;
+                background-color: #4CAF50;
+                color: white;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+
+            .back-link a:hover {
+                background-color: #388e3c;
+            }
+
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 25px;
+            }
+
+            .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-links li a {
+                text-decoration: none;
+                font-weight: bold;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lavika Rawat</div>
+
+            <ul class="nav-links">
+                <li class="back-link"><a href="index.html">← Back to Home</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="contact-page">
+        <h2>Contact Me</h2>
+        <p>If you’d like to work together or just want to say hi, fill out the form below 👇</p>
+
+        <form action="https://formspree.io/f/xpwrojye" class="contact-form" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+            <a href="https://github.com/Lavikarawat" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="linkedin.com/in/lavika-rawat-8644142a8" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+</body>
+</html>
