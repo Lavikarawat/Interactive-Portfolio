@@ -120,6 +120,9 @@ body {
     .hamburger {
         display: block;
     }
+    .hero-img {
+        display: none;
+    }
 }
 
 
