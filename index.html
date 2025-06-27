@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavika Rawat - Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <!-- logo -->
+      <div class="logo">Lavika Rawat</div>
+
+      <!-- Navbar links -->
+      <ul class="nav-links" id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- user icon -->
+      <div class="user-icon" onclick="toggleUserMenu()">
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+
+      <!-- Hamburger menu -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </nav>
+
+    <!-- dropdown menu -->
+    <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+
+        <!-- user info -->
+        <div class="user-info">
+          <i class="fa-solid fa-circle-user"></i>
+          <h4>Lavika Rawat</h4>
+        </div>
+        <hr />
+
+        <!-- Links -->
+        <a href="contact.html" class="sub-menu-link">
+          <i class="fa-solid fa-file"></i>
+          <p>Download Resume</p>
+          <span>></span>
+        </a>
+
+        <a href="#" class="sub-menu-link">
+          <i class="fa-brands fa-linkedin"></i>
+          <p>LinkedIn</p>
+          <span>></span>
+        </a>
+
+        <a href="#" class="sub-menu-link">
+          <i class="fa-brands fa-github"></i>
+          <p>GitHub</p>
+          <span>></span>
+        </a>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hey, I'm <span class="highlight">Lavika Rawat</span></h1>
+      <p>I build clean, responsive websites and write content that connects.</p>
+      <p class="tagline">Turning ideas into reality, one line of code at a time.</p>
+      <button>Hire Me</button>
+    </div>
+
+    <div class="hero-img">
+      <img src="girl.png" alt="Girl with laptop" class="hero-image" />
+    </div>
+  </section>
+
+
+  <!-- project preview -->
+  <section class="project-preview" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
+
+      <div class="project-c">
+        <h3>Interactive Resume Website</h3>
+        <p>HTML, CSS, JavaScript</p>
+        <a href="https://github.com/Lavikarawat/Interactive-Portfolio.git" target="_blank" rel="noopener">🔗 GitHub</a>
+        <a href="https://lavikarawat.github.io/Interactive-Portfolio/" target="_blank" rel="noopener">🌐 Live Demo</a>
+      </div>
+
+      <div class="project-c">
+        <h3>More Projects Coming Soon...</h3>
+        <p>I’m currently working on new ideas and cool web experiences. Stay tuned!</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- About section -->
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Lavika Rawat, a frontend developer passionate about crafting clean, responsive websites that engage
+      users and communicate clearly.</p>
+
+    <h3>🎓 Education</h3>
+    <p>B.Sc in Computer Science – Doon University (2023–2025)<br>CGPA: 7.16</p>
+
+    <h3>💼 Work Experience</h3>
+    <p>Frontend Intern </p>
+    <ul>
+      <li>Built responsive UIs using HTML, CSS, JS</li>
+      <li>Collaborated on design with the UI team</li>
+    </ul>
+
+    <h3>🧠 Skills</h3>
+    <div class="skill-list">
+      <div class="skill" data-tooltip="Semantic structure, forms, SEO">HTML</div>
+      <div class="skill" data-tooltip="Flexbox, Grid, animations">CSS</div>
+      <div class="skill" data-tooltip="DOM, ES6, events">JavaScript</div>
+    </div>
+
+  </section>
+
+  <!-- tools -->
+  <section id="tools">
+    <h2>🛠️ Tools I Use</h2>
+    <div class="tool-grid">
+      <div class="tool">HTML5</div>
+      <div class="tool">CSS3</div>
+      <div class="tool">JavaScript</div>
+      <div class="tool">VS Code</div>
+      <div class="tool">GitHub</div>
+      <div class="tool">Font Awesome</div>
+      <div class="tool">Responsive Design</div>
+    </div>
+  </section>
+
+  </section>
+
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul class="achievements-list">
+      <li>📜 Completed Web Development Certificate – 2024</li>
+      <li>💼 Built this Interactive Resume & Portfolio during internship</li>
+      <li>🚀 Started using tools like GitHub, AOS, Chrome DevTools</li>
+    </ul>
+  </section>
+
+
+  <!-- fact -->
+
+  <section class="fun-fact">
+    <blockquote>“Every great developer you know started as a beginner.”</blockquote>
+    <p class="fun-tagline">P.S. I also box when I’m not building websites. 🥊</p>
+  </section>
+
+  <!-- call -->
+
+  <div class="call">
+    <h2>Let's build something together.</h2>
+    <a href="Contact.html">Contact Me</a>
+  </div>
+
+
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
