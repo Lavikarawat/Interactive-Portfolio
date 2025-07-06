@@ -65,6 +65,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none;
+    z-index: 999;
 }
 
 .sub-menu-wrap.open-menu {
@@ -179,6 +180,7 @@ body {
 .hero-img {
     flex: 1;
     text-align: center;
+    z-index: 1;
 }
 
 .hero-image {
