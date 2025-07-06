@@ -10,7 +10,7 @@ window.addEventListener("click", function (e) {
     const menu = document.getElementById("subMenu");
 
     if(!icon.contains(e.target)) {
-        menu.classList.remove("open.menu");
+        menu.classList.remove("open-menu");
     }
 });
 
