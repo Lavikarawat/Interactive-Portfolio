@@ -67,8 +67,8 @@ body {
     display: none;
 }
 
-.sub-menu.open-menu {
-    display: block;
+.sub-menu-wrap.open-menu {
+  display: block;
 }
 
 .sub-menu {
